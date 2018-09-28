@@ -4,7 +4,7 @@ function getDimensions(input) {
     var m1 = document.getElementById('m1').value;
     var m2 = document.getElementById('n2').value;
 
-    var matrixA = [];
+    matrixA = [];
     for (var i = 0; i < n1; i++) {
         matrixA[i] = [];
         for (var j = 0; j < m1; j++) {
@@ -12,21 +12,47 @@ function getDimensions(input) {
         }
     }
 
-    var matrixB = [];
+    matrixB = [];
     for (var i = 0; i < n2; i++) {
-        matrixA[i] = [];
+        matrixB[i] = [];
         for (var j = 0; j < m2; j++) {
-            matrixA[i][j] = undefined;
+            matrixB[i][j] = undefined;
         }
     }
+
+    CreateTables(matrixA, matrixB);
 }
 
-const matrixA = math.add(matrixA, matrixB);
-const matrixS = math.subtract(matrixA, matrixB);
-const matrixM = math.multiply(matrixA, matrixB);
+function AddMatrices()
+{
+    return Math.add(matrixA, matrixB);
+}
+function SubtractMatrices()
+{
+    return Math.subtract(matrixA, matrixB);
+}
+function MultiplyMatrices()
+{
+    return Math.multiply(matrixA, matrixB);
+}
+// const matrixA = 
+// const matrixS = 
+// const matrixM = 
 
-const matrixTraceA = math.trace(matrixA);
-const matrixTraceB = math.trace(matrixB);
+// const matrixTraceA = Math.trace(matrixA);
+// const matrixTraceB = Math.trace(matrixB);
+
+function ExecuteOperation()
+{
+    let operation = document.getElementById("MatrixOperation").value;
+
+    if(operation == "Addition")
+        AddMatrices();
+    else if(operation == "Subtraction")
+        SubtractMatrices();
+    else if(operation == "Multiplication")
+        MultiplyMatrices();
+}
 
 function transposeArray(array){
     var h = a[0] instanceof Array ? a[0].length : 0;// height of array
@@ -43,3 +69,6 @@ function transposeArray(array){
     }
     return transposedArray;
 }
+
+var matrixA;
+var matrixB;

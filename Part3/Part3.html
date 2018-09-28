@@ -6,6 +6,7 @@
     </head>
     <body>
         <script src="Part3.js" async defer></script>
+        <script src="Part3CreateTables.js" async defer></script>
 
         <div class="DimensionForm">
             <form class="MatrixDimensions">
@@ -31,13 +32,11 @@
                     <option value="Subtraction">Subtraction (-)</option>
                     <option value="Multiplication">Multiplication (*)</option>
                 </select>
+                <br>
+                <button type="button" onclick="ExecuteOperation()">Submit</button>
             </form>
         </div>
-
-        <div class="MatrixOperationOutput">
-            <p>OUTPUT GOES HERE</p>
-        </div>
-
+        <br>
         <div class="MatrixAOptions">
             <button type="button" onclick="transposeMatrixA('A')">Transpose</button>
             <button type="button" onclick="traceMatrixA('A')">Trace</button>
@@ -46,6 +45,10 @@
         <div class="MatrixBOptions">
             <button type="button" onclick="transposeMatrix('B')">Transpose</button>
             <button type="button" onclick="traceMatrix('B')">Trace</button>
+        </div>
+
+        <div class="MatrixOperationOutput">
+            <p>OUTPUT GOES HERE</p>
         </div>
         
     </body>
