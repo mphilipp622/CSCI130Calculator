@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <div id="nValue">
+        <label for="first">Input n Value</label>
+        <form id="first" action="#" onsubmit="return build(this)">
+            <input type="text" name="nVector" value="Input value, n.">
+            <input type="submit" name="build" value="Enter">
+        </form>
+        </div>
+
+        <div id="vector" style="display:none;">
+            <div id=vectorCells></div>
+            <button id="min" onclick="minValue()">Min</button>
+            <button id="max" onclick="maxValue()">Max</button>
+            <button id="mean" onclick="meanValue()">Mean</button>
+            <button id="SD" onclick="standardDeviation()">Standard Deviation</button>
+            <br>
+            <textarea id="output" rows="1" cols="50"></textarea>
+        </div>
+    </body>
+</html>
