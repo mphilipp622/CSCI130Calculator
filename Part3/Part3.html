@@ -7,17 +7,46 @@
     <body>
         <script src="Part3.js" async defer></script>
 
-        <form class="MatrixDimensions">
-            n1: <input type="number" id="n1">
-            <br>
-            m1: <input type="number" id="m1">
-            <br>
-            n2: <input type="number" id="n2">
-            <br>
-            m2: <input type="number" id="m2">
-            <br>
-            <button type="button" onclick="getDimensions()">Create Matrices</button>
-        </form>
+        <div class="DimensionForm">
+            <form class="MatrixDimensions">
+                n1: <input type="number" id="n1">
+                <br>
+                m1: <input type="number" id="m1">
+                <br>
+                n2: <input type="number" id="n2">
+                <br>
+                m2: <input type="number" id="m2">
+                <br>
+                <br>
+                <button type="button" onclick="getDimensions()">Create Matrices</button>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="ComboBox">
+            <form class="OperationComboBox">
+                <select id="MatrixOperation">
+                    <option value="Addition">Addition (+)</option>
+                    <option value="Subtraction">Subtraction (-)</option>
+                    <option value="Multiplication">Multiplication (*)</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="MatrixOperationOutput">
+            <p>OUTPUT GOES HERE</p>
+        </div>
+
+        <div class="MatrixAOptions">
+            <button type="button" onclick="transposeMatrixA('A')">Transpose</button>
+            <button type="button" onclick="traceMatrixA('A')">Trace</button>
+        </div>
+
+        <div class="MatrixBOptions">
+            <button type="button" onclick="transposeMatrix('B')">Transpose</button>
+            <button type="button" onclick="traceMatrix('B')">Trace</button>
+        </div>
         
     </body>
 </html>
