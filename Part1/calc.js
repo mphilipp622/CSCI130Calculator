@@ -8,8 +8,6 @@ function captureKey(key){
 	}
 	numbers[pos]=numbers[pos]+key;
 	console.log(numbers[pos]);
-
-
 }
 
 
