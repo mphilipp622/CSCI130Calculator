@@ -19,4 +19,5 @@ function getDimensions(input) {
             matrixA[i][j] = undefined;
         }
     }
+
 }
