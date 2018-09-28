@@ -6,14 +6,14 @@
     <body>
         <div id="nValue">
         <label for="first">Input n Value</label>
-        <form id="first" action="#" onsubmit="return build(this)">
-            <input type="text" name="nVector" value="Input value, n.">
+        <form id="first" action="#" onsubmit="build(document.getElementById("nVector"))">
+            <input type="number" name="nVector">
             <input type="submit" name="build" value="Enter">
         </form>
         </div>
 
-        <div id="vector" style="display:none;">
-            <div id=vectorCells></div>
+        <div id="vector">
+            <table id=vectorCells></table>
             <button id="min" onclick="minValue()">Min</button>
             <button id="max" onclick="maxValue()">Max</button>
             <button id="mean" onclick="meanValue()">Mean</button>
