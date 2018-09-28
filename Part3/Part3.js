@@ -19,12 +19,14 @@ function getDimensions(input) {
             matrixA[i][j] = undefined;
         }
     }
-
 }
 
 const matrixA = math.add(matrixA, matrixB);
 const matrixS = math.subtract(matrixA, matrixB);
 const matrixM = math.multiply(matrixA, matrixB);
+
+const matrixTraceA = math.trace(matrixA);
+const matrixTraceB = math.trace(matrixB);
 
 function transposeArray(array){
     var h = a[0] instanceof Array ? a[0].length : 0;// height of array
