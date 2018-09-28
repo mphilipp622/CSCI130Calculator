@@ -1,3 +1,4 @@
+//Joseph Sesate
 
 function minValue(vectorArray)
 {
