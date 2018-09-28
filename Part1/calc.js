@@ -1,5 +1,21 @@
+var numbers = [];
+var pos=0;
+var ops = [];
+
 function captureKey(key){
-    
+	if (numbers[pos] === null){
+		numbers[pos];
+	}
+	numbers[pos]=numbers[pos]+key;
+	console.log(numbers[pos]);
+
+
+}
+
+
+
+function incArray(){
+	pos++;
 }
 
 function addKey(a,b){

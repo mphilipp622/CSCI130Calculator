@@ -1,23 +1,40 @@
+body {
+	background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+	text-align:center;
+	width: 400px;
+}
+
+body > div {
+  margin:auto;
+}
+
+#container {
+	display:block;
+}
 
 #calc {
 	display: flex;
 	flex-wrap: wrap;
+	background-color: dodgerblue;
   }
   
-  .square {
+  .button {
+	flex-basis: calc(25% - 4px);
 	position: relative;
 	margin: 2px;
 	border: 1px solid;
 	box-sizing: border-box;
   }
   
-  .square::before {
+  .button::before {
 	content: "";
 	display: block;
 	padding-top: 100%;
   }
   
-  .square .content {
+  .button .content {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -25,6 +42,6 @@
 	width: 100%;
   }
   
-  .square .content:hover {
+  .button:hover {
 	background-color: red;
   }
