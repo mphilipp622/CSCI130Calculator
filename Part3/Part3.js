@@ -19,6 +19,7 @@ function getDimensions(input) {
             matrixA[i][j] = undefined;
         }
     }
+
 }
 
 function transposeArray(array){
